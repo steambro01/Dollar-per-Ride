@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--react links-->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script> 
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> 
+
+    <link rel="stylesheet" href="style.css">
+    <title>MPG</title>
+</head>
+<body>
+
+    <form id="main-form">
+        <div id="flexContainer">
+
+            <div id="description">
+                <p>
+                Waiting on payday? Got to get to work but don't want to over or under fill your tank? With Dollars Per Ride we will do the math for you. Instead of taking time to do the math have the exact amount needed to get you from point A to point B in seconds.
+                </p>    
+            </div>
+
+            <div class="questions">
+                <label> Price Per Gallon:</label>
+                <input type="number" for="Price" id="ppg">
+            </div>
+
+            <div class="questions">
+                <label>Miles Needed:</label>
+                <input type="number" for="miles" id="milesNeeded">
+            
+            </div>
+
+            <div class="questions">
+                <label>Average MPG:</label>
+                <input type="number" for="mpg" id="mpg">
+            </div>
+            <div id="submit">
+                <button type="button" id="submit">submit</button>
+            </div>
+
+            <div>
+                <label>$</label>
+                 <input id="total" value="total cost" type="text">
+            </div>
+        </div>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>
